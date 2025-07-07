@@ -3,55 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Parth Dogra - Portfolio</title>
+  <title>Parth Dogra - Product Manager Portfolio</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #fff;
-      color: #111;
+      background-color: #ffffff;
+      color: #111111;
       line-height: 1.6;
     }
     header {
-      background: #0077b6;
-      color: #fff;
-      padding: 10px 20px;
+      background-color: #0077b6;
+      color: #ffffff;
+      padding: 12px 20px;
       position: sticky;
       top: 0;
+      z-index: 1000;
+    }
+    header nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     header nav a {
-      color: #fff;
-      margin: 0 10px;
+      color: #ffffff;
+      margin: 0 12px;
       text-decoration: none;
       font-weight: bold;
+      transition: opacity 0.2s ease;
     }
     header nav a:hover {
-      text-decoration: underline;
+      opacity: 0.8;
     }
-    section {
-      padding: 30px 20px;
+    main {
       max-width: 800px;
       margin: auto;
+      padding: 20px;
     }
-    h1, h2 {
+    section {
+      margin-bottom: 50px;
+    }
+    h1, h2, h3 {
       color: #0077b6;
+      margin-top: 0;
     }
     .btn {
       display: inline-block;
-      margin: 10px 5px;
-      padding: 8px 15px;
-      background: #0077b6;
-      color: #fff;
+      margin: 8px 5px;
+      padding: 10px 18px;
+      background-color: #0077b6;
+      color: #ffffff;
       text-decoration: none;
-      border-radius: 4px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
     }
     .btn:hover {
-      background: #005b8c;
+      background-color: #005b8c;
     }
     .timeline {
-      border-left: 2px solid #0077b6;
+      border-left: 3px solid #0077b6;
       padding-left: 20px;
-      margin: 20px 0;
+      margin-top: 20px;
     }
     .timeline-item {
       position: relative;
@@ -60,29 +72,31 @@
     .timeline-item::before {
       content: "";
       position: absolute;
-      left: -9px;
+      left: -10px;
       top: 0;
       width: 16px;
       height: 16px;
       background-color: #0077b6;
       border-radius: 50%;
     }
-    .timeline-item h3 {
-      margin: 0;
-      font-size: 1.2em;
-      color: #0077b6;
-    }
     .timeline-item p {
-      margin: 5px 0 0 0;
-      font-size: 0.95em;
-      color: #333;
+      margin: 5px 0 0;
+      color: #333333;
     }
     footer {
-      background: #f0f0f0;
       text-align: center;
-      padding: 10px;
+      background-color: #f2f2f2;
+      padding: 12px;
       font-size: 0.9em;
-      margin-top: 30px;
+      color: #333333;
+    }
+    @media(max-width: 600px) {
+      header nav {
+        flex-direction: column;
+      }
+      header nav a {
+        margin: 6px 0;
+      }
     }
   </style>
 </head>
@@ -100,9 +114,9 @@
     <section id="about">
       <h1>Parth Dogra</h1>
       <p>
-        Senior Product Manager passionate about solving complex problems at scale, from the hills of Himachal Pradesh to BITS Pilani to leading global fintech and SaaS platforms.
+        Senior Product Manager passionate about solving complex problems at scale. From the hills of Himachal Pradesh to BITS Pilani to leading global fintech and SaaS products, I have been driven by curiosity and a love for building impactful solutions.
       </p>
-      <a href="assets/resume.pdf" download class="btn">Download My Resume</a>
+      <a href="assets/resume.pdf" download class="btn">Download Resume</a>
       <a href="https://calendly.com/your-mentorship-link" target="_blank" class="btn">Book 1:1 Mentorship Chat</a>
     </section>
 
@@ -111,31 +125,31 @@
       <div class="timeline">
         <div class="timeline-item">
           <h3>Himachal Pradesh</h3>
-          <p>Grew up solving everyday challenges, sparked a lifelong curiosity to build and improve things.</p>
+          <p>Grew up solving everyday challenges, sparked lifelong curiosity and resourcefulness.</p>
         </div>
         <div class="timeline-item">
           <h3>BITS Pilani</h3>
-          <p>Broadened my perspective, led campus projects, discovered my love for product management and technology.</p>
+          <p>Broadened my mindset, led campus initiatives, and discovered product management at the intersection of tech and business.</p>
         </div>
         <div class="timeline-item">
           <h3>Cisco (2018–2019)</h3>
-          <p>First exposure to product GTM, scaling chatbot products, and collaborating in a global environment.</p>
+          <p>Contributed to large-scale GTM strategies, chatbot products, and global collaboration at scale.</p>
         </div>
         <div class="timeline-item">
           <h3>Shipsy (2019–2021)</h3>
-          <p>Led 0→1 logistics AI products, including predictive shipment tracking and user-focused SaaS improvements.</p>
+          <p>Built 0→1 AI-driven logistics platforms, focusing on predictive tracking and user-centric SaaS experiences.</p>
         </div>
         <div class="timeline-item">
           <h3>Built Technologies (2021–2025)</h3>
-          <p>Owned CRE 2.0 SaaS from idea to launch, delivering $50M+ in pipeline, scaling modern construction lending workflows.</p>
+          <p>Launched CRE 2.0 from scratch, scaling modern B2C/B2B construction finance workflows to deliver $50M+ pipeline impact.</p>
         </div>
         <div class="timeline-item">
           <h3>Discover Financial Services (2025–Present)</h3>
-          <p>Driving next-generation digital wallet provisioning, Flex Auth 0→1, advanced token orchestration and fraud mitigation.</p>
+          <p>Driving next-gen digital wallet provisioning, Flex Auth, token orchestration, and fraud prevention initiatives at scale.</p>
         </div>
         <div class="timeline-item">
           <h3>Capital One (Present)</h3>
-          <p>Shaping the future of fintech, payments, and platform strategy with a focus on user-centric secure financial products.</p>
+          <p>Shaping the future of secure payments, risk innovation, and fintech platform modernization.</p>
         </div>
       </div>
     </section>
@@ -143,35 +157,36 @@
     <section id="projects">
       <h2>Personal Projects</h2>
       <ul>
-        <li><strong>Resume Parser with GPT</strong>: Automates skill extraction for hiring pipelines.</li>
-        <li><strong>Churn Predictor</strong>: Forecasts customer churn for SaaS businesses using machine learning.</li>
-        <li><strong>Fintech Risk Dashboard</strong>: Prototype to visualize fraud patterns and suspicious transaction data.</li>
+        <li><strong>Resume Parser with GPT</strong>: Automates skill extraction to streamline hiring pipelines.</li>
+        <li><strong>Churn Predictor</strong>: Predicts SaaS customer churn using machine learning models.</li>
+        <li><strong>Fintech Risk Dashboard</strong>: Prototyping real-time transaction and fraud pattern visualization.</li>
       </ul>
     </section>
 
     <section id="books">
       <h2>Book Recommendations</h2>
       <ul>
-        <li><strong>Inspired</strong> by Marty Cagan — product management principles.</li>
-        <li><strong>Lean Startup</strong> by Eric Ries — test and learn culture.</li>
-        <li><strong>Measure What Matters</strong> by John Doerr — OKRs at scale.</li>
-        <li><strong>Hooked</strong> by Nir Eyal — habit-forming products.</li>
-        <li><strong>Thinking in Bets</strong> by Annie Duke — making better decisions.</li>
+        <li><strong>Inspired</strong> by Marty Cagan — product management foundations.</li>
+        <li><strong>Lean Startup</strong> by Eric Ries — fast experimentation frameworks.</li>
+        <li><strong>Measure What Matters</strong> by John Doerr — OKRs done right.</li>
+        <li><strong>Hooked</strong> by Nir Eyal — building habit-forming products.</li>
+        <li><strong>Thinking in Bets</strong> by Annie Duke — smarter decision-making under risk.</li>
       </ul>
-      <h3>Featured Writing</h3>
+      <h3>My Writing</h3>
       <ul>
-        <li><a href="https://medium.com/@1parth521" target="_blank">Visit my Medium profile</a> for articles on PM frameworks, fintech, and product leadership.</li>
+        <li><a href="https://medium.com/@1parth521" target="_blank">Check out my Medium articles</a> on PM frameworks, fintech, and career stories.</li>
       </ul>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:pparthdogra@gmail.com">pparthdogra@gmail.com</a></p>
-      <p>Connect on <a href="https://linkedin.com/in/parth-dogra" target="_blank">LinkedIn</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/parth-dogra" target="_blank">linkedin.com/in/parth-dogra</a></p>
+      <a href="assets/resume.pdf" download class="btn">Download My Resume</a>
     </section>
   </main>
   <footer>
-    &copy; 2025 Parth Dogra
+    &copy; 2025 Parth Dogra. All rights reserved.
   </footer>
 </body>
 </html>
